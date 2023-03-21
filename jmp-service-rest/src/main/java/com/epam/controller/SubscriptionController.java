@@ -1,9 +1,11 @@
 package com.epam.controller;
 
+import java.util.List;
+
 import com.epam.model.SubscriptionRequestDto;
 import com.epam.model.SubscriptionResponseDto;
 
-public interface ServiceController {
+public interface SubscriptionController {
 	SubscriptionResponseDto createSubscription(SubscriptionRequestDto request);
 
 	SubscriptionResponseDto updateSubscription(SubscriptionRequestDto request);
@@ -12,5 +14,5 @@ public interface ServiceController {
 
 	SubscriptionResponseDto getSubscription(Long id);
 
-	SubscriptionResponseDto getAllSubscription();
+	List<SubscriptionResponseDto> getAllSubscription();
 }
