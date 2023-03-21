@@ -1,7 +1,5 @@
 package com.epam.converter;
 
-import java.time.LocalDate;
-
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
