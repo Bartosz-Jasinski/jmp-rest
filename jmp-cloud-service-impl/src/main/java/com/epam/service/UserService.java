@@ -19,7 +19,7 @@ public class UserService {
 	@Autowired
 	private UserController userController;
 
-	@GetMapping(value = "/all", produces = "application/json")
+	@GetMapping(produces = "application/json")
 	public void getAllUser(){
 		List<UserResponseDto> allUser = userController.getAllUser();
 	}
