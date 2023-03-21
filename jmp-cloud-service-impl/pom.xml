@@ -20,8 +20,14 @@
 
         <dependency>
             <groupId>com.epam</groupId>
-            <artifactId>jmp-service-rest</artifactId>
+            <artifactId>jmp-service-api</artifactId>
             <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 

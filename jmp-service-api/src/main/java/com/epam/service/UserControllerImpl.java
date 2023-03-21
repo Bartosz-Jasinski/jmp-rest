@@ -2,22 +2,17 @@ package com.epam.service;
 
 import java.security.InvalidParameterException;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.StreamSupport;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.convert.ConversionService;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 
 import com.epam.controller.UserController;
-import com.epam.model.User;
 import com.epam.model.UserRequestDto;
 import com.epam.model.UserResponseDto;
 import com.epam.repo.UserRepository;
 
-@Component
+@Service
 public class UserControllerImpl implements UserController {
 
 	private final UserRepository userRepository;
